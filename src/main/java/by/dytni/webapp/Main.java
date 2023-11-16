@@ -30,6 +30,7 @@ public class Main extends HttpServlet {
         ZonedDateTime zonedDateTime = ZonedDateTime.now(zoneId);
         String time = zonedDateTime.format(DateTimeFormatter.ofPattern("HH-mm-ss"));
         resp.getWriter().println(time);
+
     }
 
 }
