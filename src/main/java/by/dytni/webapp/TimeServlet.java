@@ -12,12 +12,11 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 @WebServlet(
-        name = "Main",
+        name = "TimeServlet",
         urlPatterns = "/time"
 
 )
-public class Main extends HttpServlet {
-
+public class TimeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String zone = req.getParameter("zone");
@@ -30,7 +29,6 @@ public class Main extends HttpServlet {
         ZonedDateTime zonedDateTime = ZonedDateTime.now(zoneId);
         String time = zonedDateTime.format(DateTimeFormatter.ofPattern("HH-mm-ss"));
         resp.getWriter().println(time);
-
     }
 
 }
