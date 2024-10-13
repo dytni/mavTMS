@@ -1,6 +1,5 @@
 package by.dytni.webapp;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,7 +7,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(
         name = "MainServlet",
@@ -33,7 +31,7 @@ public class MainServlet extends HttpServlet {
                     <button class="btn btn-secondary dropdown-toggle" style="width: 100%; height: 10%;" type="button" data-bs-toggle="dropdown" aria-expanded="false">My tasks</button>
                     <ul class="dropdown-menu" style="width: 100%;">
                         <li><button type="button"  onclick="location.href='time'" class="dropdown-item">time</button></li>
-                        <li><button type="button" onclick="location.href='names'" class="dropdown-item">name</button></li>
+                        <li><button type="button" onclick="location.href='index.jsp'" class="dropdown-item">name</button></li>
                     </ul>
                 </div>
                 </body>

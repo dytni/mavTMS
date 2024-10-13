@@ -1,10 +1,19 @@
-<html>
+<html lang="en">
 <head>
-    <title>my web app</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-<body >
-<h2 align = center>Hello Users</h2>
-<img  src="img/img_1.png" align = center width="480">
+<body>
+<form action="/login" method="post">
+    <h1>Login</h1>
 
+    <input id="username" name="username" type="text" autocomplete="off" placeholder="username" required>
+
+    <input id="password" name="password" type="password" autocomplete="off" placeholder="password" required>
+
+    <input type="submit">
+</form>
 </body>
 </html>
+
